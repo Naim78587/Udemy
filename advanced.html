@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced html5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--web accessibility-->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Visit</a>
+    </nav>
+    <header>
+        <h1>Naim Ahmed</h1>
+        <strong>Software Developer</strong><br>
+        <img src="dp.jpg" alt="loading image">
+    </header>
+    <main>
+        <section id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7PIji8OubXU?si=9ugF59j-Q9mp2Ncx" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="map of fhaka"
+            allowfullscreen >
+        </iframe>
+        </section>
+        <section id="form">
+            <form action="https://formspree.io/f/xdkogdwr" method="post">
+                <div>
+                    <label for="name">Your Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div>
+                    <label for="email">Your email: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" id="dob" name="dob" placeholder="Date of Birth" required>
+                </div>
+                <div>
+                    <span>Gender: </span>
+                    <input type="radio" id="gender" name="gender">
+                    <label for="gender">Male</label>
+                    <input type="radio" id="gender" name="gender">
+                    <label for="gender">Female</label>
+                    <input type="radio" id="gender" name="gender">
+                    <label for="gender">Others</label>
+                </div>
+                <div>
+                    <label for="password">Your password: </label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div>
+                    <label for="message">Message: </label><br>
+                    <textarea name="message" id="message" cols="25" rows="10"></textarea>
+                </div>
+                <button type="submit" aria-label="Send me your informations">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <i class="fa-solid fa-circle-check"></i>
+    Built by Naim Ahmed with &hearts; <br>
+   &copy; 2024 <br>
+   <i class="fa-brands fa-facebook-f"></i> Facebook <br>
+   <i class="fab fa-linkedin"></i> Linkedin 
+    </footer>
+</body>
+</html>
