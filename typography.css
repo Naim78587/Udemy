@@ -1,3 +1,14 @@
+body{
+    background-color: aliceblue;
+}
+header{
+    height: 10vh;
+    background-image: url("h6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 p{
     /* 1rem=16px=100%*/
     font-size: 2rem;
@@ -35,10 +46,37 @@ h1{
     font-size: 4rem;
     color: #3262a8;
 }
-h2{
-    background-color: blue;
+.c1{
+    background-color: #6b6ba8;
     display: inline;
 }
-a{
+.c2{
     display: block;
+}
+.c3{
+    display: inline-block;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: #42adf5;
+    margin: 10px;
+}
+#para1{
+    background-color: #6b6ba8;
+    max-width: 100rem;
+}
+#para2{
+    background-color: #6b6ba8;
+    width: 100rem;
+}
+img{
+    opacity: 0.5;
+}
+img:hover{
+    opacity: 1;
+}
+div{
+    width: 80rem;
+    height: 200px;
+    overflow: scroll;
+    background-color: #42adf5;
 }
