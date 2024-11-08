@@ -1,0 +1,44 @@
+p{
+    /* 1rem=16px=100%*/
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.p2{
+    font-size: 2rem;
+    font-family:"Roboto", sans-serif;
+    /*from color picker
+    for color combination for a website we can use colorhunt website*/
+    color: #42adf5;
+    line-height: 10rem;
+}
+h3{
+    /*text-align: center;*/
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-indent: 5rem;
+    letter-spacing: 1rem;
+    text-shadow: 0.1rem 0.2rem green;
+}
+h1{
+    box-sizing: border-box;
+    background-color: green;
+    width: 50%;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    border: 10px solid red;
+    margin-top: 50px;
+}
+.icon{
+    font-size: 4rem;
+    color: #3262a8;
+}
+h2{
+    background-color: blue;
+    display: inline;
+}
+a{
+    display: block;
+}
