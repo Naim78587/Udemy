@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --text_color: #fff;
+    --padding: 1rem;
+}
+main{
+    background-color: #2596be;
+    color: var(--text_color);
+    padding: var(--padding);
+}
+footer{
+    background-color: #034077;
+    color: var(--text_color);
+    padding: var(--padding);
+}
+img{
+    height: 400px;
+    width: 610px;
+    filter: saturate(0);
+}
+img:hover{
+    filter: saturate(1);
+}
+h2{
+    text-align: center;
+}
+.card{
+    width: 30%;
+    background-color: rgb(247, 234, 218);
+    color: black;
+    padding: var(--padding);
+    margin: 1rem;
+    float: left;
+}
+.card:hover{
+    box-shadow: 0.1rem 0.2rem 0.5rem rgba(255, 255, 255, 0.5);
+}
+/*for clearing float*/
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.card1{
+    width: 33%;
+    background-color: red;
+    text-align: center;
+    color: white;
+    padding: var(--padding);
+    
+    float: left;
+}
+.card2{
+    width: 33%;
+    background-color: green;
+    text-align: center;
+    color: white;
+    padding: var(--padding);
+    
+    float: left;
+}
+.card3{
+    width: 33%;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: var(--padding);
+    
+    float: left;
+}
+.blog-div::after{
+    content: "";
+    clear: both;
+    display: table;
+}
