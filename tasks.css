@@ -18,3 +18,24 @@ a{
     justify-content: flex-start;
     gap: 1.5rem;
 }
+
+.main{
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 85vh;
+}
+.child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    height: 15vh;
+    width: 25%;
+    padding: 5rem;
+    margin: 5px;
+}
+.child:hover{
+    box-shadow: 0.1rem 0.2rem white;
+}
