@@ -5,7 +5,7 @@
     gap: 1.5rem;
 }
 .main{
-    background-color: brown;
+    background-color: orange;
     height: 50vh;
     display: flex;
     /*flex-direction: row-reverse;
@@ -51,4 +51,38 @@
 .item5{
     align-self: flex-start;
     align-items: flex-end;
+}
+
+/*responsiveness
+screen size
+phone 600
+*/
+@media screen and (max-width: 992px) {
+    .main{
+        background-color: red;
+    }
+    .main1{
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+        background-color: green;
+    }
+    .main1{
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        background-color: yellow;
+    }
+    .main1{
+        background-color: yellow;
+    }
+    .center{
+        flex-direction: column;
+    }
 }

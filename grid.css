@@ -1,10 +1,10 @@
 body{
     margin: 0;
+    background-color: aquamarine;
+    height: 100vh;
 }
 .team{
     padding: 1rem;
-    background-color: aquamarine;
-    height: 50vh;
 }
 h2{
     text-align: center;
@@ -14,13 +14,149 @@ h2{
    /*grid-template-columns: 40% 20% 20% 20%;
    grid-template-columns: 300px 150px 150px 150px;*/
    grid-template-columns: auto auto auto auto;
-    gap: 1rem;
+    gap: 2rem;
 }
 .memberrs{
     background-color: white;
     padding: 2rem;
+    border-radius: 50px;
+}
+.memberrs:hover{
+    transform: scale(1.05);
 }
 .m1{
     background-color: green;
     grid-column: 1/span 3;
+    transition: background-color;
+    transition-duration: 2s;
+    /*transition-delay: 1s;*/
+    transition-timing-function: linear;
+}
+.m1:hover{
+    background-color: white;
+}
+
+
+/*nav bar*/
+
+/* General Reset */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+header {
+    background-color: #2596be;
+    color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1.5rem;
+}
+
+.nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 50px;
+}
+.nav-div span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+.nav-div li {
+    display: inline-block;
+    margin-left: 20px; 
+}
+
+.nav-div a {
+    font-size: 16px;
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+.nav-div a:hover {
+    background-color: #c51717; 
+    color: #fff; 
+}
+
+
+
+.center{
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.main{
+    height: 50vh;
+    display: flex;
+}
+.d1{
+    background-color: #2596be;
+    height: 15vh;
+    width: 15%;
+    box-shadow: 0.1rem 0.2rem white;
+    border-radius: 5%;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+}
+.d1:hover{
+    transform: scale(1.2) rotate(180deg);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.circle{
+    position: relative;
+    background-color: #ff0000;
+    color: #fff;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: circle-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes circle-animation {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        background-color: #ff2424;
+        top: -150px;
+        left: 0;
+    }
+    50%{
+        background-color: #ff4747;
+    }
+    75%{
+        background-color: #ff6b6b;
+        top: 150px;
+        left: 0;
+    }
+    100%{
+        background-color: #ff8f8f;
+        top: 0;
+        left: 0;
+    }
 }
