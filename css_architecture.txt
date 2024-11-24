@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    magrin:0;
+    padding:0;
+}
+
+
+priority 
+!important > inline styling > id > class > element
+
+
+class name
+_____________________
+BEM Architecture
+block element modifier
+BAM is a standard for making class name
